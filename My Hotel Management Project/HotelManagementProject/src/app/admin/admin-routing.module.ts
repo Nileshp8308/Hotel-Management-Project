@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminLandingComponent } from './admin-landing/admin-landing.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {component:AdminLandingComponent,path:''}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

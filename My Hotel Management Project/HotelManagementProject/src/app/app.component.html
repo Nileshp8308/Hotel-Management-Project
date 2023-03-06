@@ -1,0 +1,33 @@
+
+  <nav class="navbar bg-primary">
+    <div>
+      <i class="font-weight-bolder">Lotus <span class="text-body">Resort</span></i>
+      <span id="btn"> 
+        <button class="btn btn-outline-dark" (click)="redirect('/admin')">Admin</button>
+        <button class="btn btn-outline-dark" (click)="redirect('/owner')">Owner</button>
+        <button class="btn btn-outline-dark" (click)="redirect('/user')">User</button>
+        <button class="btn btn-outline-dark" routerLink="/home">Home</button>
+      </span>
+    </div>
+    <!-- <i class="navbar-toggler">Resort</i> -->
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div> -->
+  </nav>
+  <router-outlet></router-outlet>
