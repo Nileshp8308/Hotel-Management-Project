@@ -13,4 +13,7 @@ export class OwnerLandingComponent {
   redirect(){
     this.router.navigateByUrl("owner/ownerSignUp")
   }
+  submit(data:any){
+    console.log(data)
+  }
 }

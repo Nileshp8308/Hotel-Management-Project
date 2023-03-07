@@ -15,24 +15,23 @@
                   <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                 </div>
 
-                <form #signForm="ngForm" >
+                <form #signinForm="ngForm" (ngSubmit)="submit(signinForm.value)">
                   <p>Please login to your account</p>
 
                   <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control form-control is-invalid"
-                      placeholder="Phone number or email address" />
-                    <label class="form-label" for="form2Example11">Username</label>
+                      <label class="form-label" for="form2Example11">Username</label>
+                    <input type="email" #username="ngModel" name="username" ngModel  class="form-control form-control is-invalid"
+                      placeholder="Phone number or email address" required [ngClass]="{'is-invalid': username.errors?.['required'] && username.touched}"/>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control form-control is-invalid" />
-                    <label class="form-label" for="form2Example22">Password</label>
+                      <label class="form-label" for="form2Example22">Password</label>
+                    <input type="password" id="form2Example22" class="form-control form-control is-invalid" name="pass" ngModel #pass="ngModel" required [ngClass]="{'is-invalid':pass.touched && pass.errors?.['required']}" />
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                      in</button>
-                    <a class="text-muted" href="#!">Forgot password?</a>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" >Log in</button>
+                    <a class="text-muted" routerLink="">Forgot password?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
