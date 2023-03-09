@@ -1,0 +1,45 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "fname": "Shubham",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "09623449295",
+      "email": "shubhamp881@gmail.com",
+      "female": "",
+      "male": "",
+      "username": "Shubham9623",
+      "pass": "Shubham@!123",
+      "check": true,
+      "id": 2
+    },
+    {
+      "fname": "Nilesh",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "8668379754",
+      "email": "nileshp8308@gmail.com",
+      "female": "",
+      "male": "male",
+      "username": "Nileshp8308",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

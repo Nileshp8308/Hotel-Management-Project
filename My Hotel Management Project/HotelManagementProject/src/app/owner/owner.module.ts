@@ -6,11 +6,13 @@ import { OwnerLandingComponent } from './owner-landing/owner-landing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OwnersSignUpComponent } from './owners-sign-up/owners-sign-up.component';
 import { SharedModule } from '../shared/shared.module';
+import { AfterLoginComponent } from './after-login/after-login.component';
 
 @NgModule({
   declarations: [
     OwnerLandingComponent,
-    OwnersSignUpComponent
+    OwnersSignUpComponent,
+    AfterLoginComponent
   ],
   imports: [
     CommonModule,
