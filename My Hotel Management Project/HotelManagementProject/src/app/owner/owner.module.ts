@@ -7,12 +7,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OwnersSignUpComponent } from './owners-sign-up/owners-sign-up.component';
 import { SharedModule } from '../shared/shared.module';
 import { AfterLoginComponent } from './after-login/after-login.component';
+import { OwnersloginComponent } from './ownerslogin/ownerslogin.component';
+import { NewHotelRegistrationComponent } from './new-hotel-registration/new-hotel-registration.component';
+import { MyHotelComponent } from './my-hotel/my-hotel.component';
 
 @NgModule({
   declarations: [
     OwnerLandingComponent,
     OwnersSignUpComponent,
-    AfterLoginComponent
+    AfterLoginComponent,
+    OwnersloginComponent,
+    NewHotelRegistrationComponent,
+    MyHotelComponent
   ],
   imports: [
     CommonModule,

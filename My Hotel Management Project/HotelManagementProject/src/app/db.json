@@ -1,22 +1,16 @@
 {
-  "post": [
+  "user": [
     {
       "id": 1,
       "title": "json-server",
       "author": "typicode"
-    },
+    }
+  ],
+  "owner": [
     {
-      "fname": "Shubham",
-      "mname": "Atul",
-      "lname": "Patil",
-      "mob": "09623449295",
-      "email": "shubhamp881@gmail.com",
-      "female": "",
-      "male": "",
-      "username": "Shubham9623",
-      "pass": "Shubham@!123",
-      "check": true,
-      "id": 2
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     },
     {
       "fname": "Nilesh",
@@ -29,17 +23,39 @@
       "username": "Nileshp8308",
       "pass": "Nilesh@123",
       "check": true,
+      "id": 2
+    },
+    {
+      "fname": "shubham",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "09623449295",
+      "email": "shubhamp881@gmail.com",
+      "female": "",
+      "male": "",
+      "username": "Shubhamp881",
+      "pass": "Shubham@123",
+      "check": true,
       "id": 3
     }
   ],
-  "comments": [
+  "admin": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "typicode"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "hotelDetails": [
+    {
+      "ownername": "Shubham",
+      "ownermob": "5236997744",
+      "hotelname": "Green Leaf",
+      "hoteladdress": "Chalisgaon",
+      "hotelmob": "633995522",
+      "hotelmenu": "Dosa",
+      "room": "5",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 19
+    }
+  ]
 }

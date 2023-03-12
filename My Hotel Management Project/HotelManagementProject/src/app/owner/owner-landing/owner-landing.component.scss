@@ -1,18 +1,23 @@
-.h-100.gradient-form{
-    background-image: url("~src/assets/pexels-suzy-hazelwood-1629236.jpg");
-    background-size: cover;
-    height: 750px;
-    width: 1500px;
+.navbar.navbar-dark.bg-primary{
+    height: 80px;
 }
-.card-body.p-md-5.mx-md-4{
-    padding: 2rem !important;
+.font-weight-bolder{
+    font-weight: bolder;
+    font-size: 40px;
+    padding-left: 10px;
+    color: whitesmoke;
 }
-.card-body.p-md-5.mx-md-4{
-    width: 450px;
+.text-body{
+    font-size: 20px;
 }
-.container.py-5.h-100{
-    width: 700px;
+.btn.btn-outline-dark{
+    margin-left:20px;
+    margin-bottom: 8px;
+    border: 2px solid;
 }
-.col-xl-10{
-    width: 74.333333%;
+#btn{
+   margin-left: 718px; 
+}
+.navbar.bg-primary{
+    width: 1500px
 }

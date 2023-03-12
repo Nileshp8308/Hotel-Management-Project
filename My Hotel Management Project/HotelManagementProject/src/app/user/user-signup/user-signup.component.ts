@@ -35,11 +35,12 @@ export class UserSignupComponent {
   }
   submit(data:any){
    let formsData=data
-   let url=" http://localhost:3000/post"
+   let url="http://localhost:3000/owner"
     this.postAPIdata=this.service.postAPI(url,data).subscribe((api:any)=>{
       this.serverResponce=api
       console.log(this.serverResponce)
       if(this.serverResponce){
+        this.studentDataForm.reset()
         this.router.navigateByUrl("/owner")
       }
     })

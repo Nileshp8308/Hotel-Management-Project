@@ -6,8 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
+
   Getuserdata: any;
   Getownerdata: any;
+  showmyHotels!: boolean;
+  serviceeditAPIResponce: any;
+  HotelId:any;
 
   constructor(private http:HttpClient) { }
 
@@ -16,5 +20,8 @@ export class ApiService {
   }
   getApi(data:any) {
     return this.http.get(data);
+  }
+  deleteAPI(url: string) {
+     return this.http.delete(url)
   }
 }
