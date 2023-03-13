@@ -42,20 +42,70 @@
   "admin": [
     {
       "name": "typicode"
+    },
+    {
+      "fname": "Nilesh",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "8668379754",
+      "email": "nileshp8308@gmail.com",
+      "female": "",
+      "male": "male",
+      "username": "Nileshp8308",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 2
+    },
+    {
+      "fname": "Shubham",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "09623449295",
+      "email": "shubhamp881@gmail.com",
+      "female": "",
+      "male": "male",
+      "username": "Shubhamp881",
+      "pass": "Shubhamp@123",
+      "check": true,
+      "id": 3
     }
   ],
   "hotelDetails": [
     {
-      "ownername": "Shubham",
-      "ownermob": "5236997744",
-      "hotelname": "Green Leaf",
+      "ownername": "Nilesh",
+      "ownermob": "8668379754",
+      "hotelname": "Ranipark",
       "hoteladdress": "Chalisgaon",
-      "hotelmob": "633995522",
-      "hotelmenu": "Dosa",
+      "hotelmob": "8877445511",
+      "hotelmenu": "Rice",
       "room": "5",
       "pass": "Nilesh@123",
       "check": true,
-      "id": 19
+      "id": 23
+    },
+    {
+      "ownername": "Kunal",
+      "ownermob": "7020813118",
+      "hotelname": "Nivant",
+      "hoteladdress": "Dhule",
+      "hotelmob": "8844551122",
+      "hotelmenu": "PaneerTikka",
+      "room": "5",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 24
+    },
+    {
+      "ownername": "Nilesh",
+      "ownermob": "8668379754",
+      "hotelname": "Pahunchar",
+      "hoteladdress": "Chalisgaon",
+      "hotelmob": "5544221133",
+      "hotelmenu": "Daltadka",
+      "room": "4",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 25
     }
   ]
 }

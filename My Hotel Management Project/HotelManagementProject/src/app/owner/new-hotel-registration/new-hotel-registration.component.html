@@ -12,38 +12,38 @@
     <form [formGroup]="ownerHotelData">
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Owner Name</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="ownername">
+        <input type="text" class="form-control form-control is-invalid" formControlName="ownername" [ngClass]="{'is-invalid':ownerHotelData.get('ownername')?.hasError('required') && ownerHotelData.get('ownername')?.touched }" appCustom>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Owner MobNo</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="ownermob">
+        <input type="text" class="form-control form-control is-invalid" formControlName="ownermob" [ngClass]="{'is-invalid':ownerHotelData.get('ownermob')?.hasError('required') && ownerHotelData.get('ownermob')?.touched || ownerHotelData.get('ownermob')?.hasError('minlength') }"appCustom2>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Hotel Name</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="hotelname">
+        <input type="text" class="form-control form-control is-invalid" formControlName="hotelname" [ngClass]="{'is-invalid':ownerHotelData.get('hotelname')?.hasError('required') && ownerHotelData.get('hotelname')?.touched } "appCustom>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Hotel Address</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="hoteladdress">
+        <input type="text" class="form-control form-control is-invalid" formControlName="hoteladdress" [ngClass]="{'is-invalid':ownerHotelData.get('hoteladdress')?.hasError('required') && ownerHotelData.get('hoteladdress')?.touched }">
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Hotel Mobile</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="hotelmob">
+        <input type="text" class="form-control form-control is-invalid" formControlName="hotelmob" [ngClass]="{'is-invalid':ownerHotelData.get('hotelmob')?.hasError('required') && ownerHotelData.get('hotelmob')?.touched || ownerHotelData.get('hotelmob')?.hasError('minlength')}"appCustom2>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Hotel Menu</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="hotelmenu">
+        <input type="text" class="form-control form-control is-invalid" formControlName="hotelmenu" [ngClass]="{'is-invalid':ownerHotelData.get('hotelmenu')?.hasError('required') && ownerHotelData.get('hotelmenu')?.touched }"appCustom>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Room Avaible</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="room">
+        <input type="text" class="form-control form-control is-invalid" formControlName="room" [ngClass]="{'is-invalid':ownerHotelData.get('room')?.hasError('required') && ownerHotelData.get('room')?.touched }" appCustom2>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Password</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="pass">
+        <input type="text" class="form-control form-control is-invalid" formControlName="pass" [ngClass]="{'is-invalid':ownerHotelData.get('pass')?.hasError('required') && ownerHotelData.get('pass')?.touched }">
     </div>
     <div>
-        <input type="checkbox" class="form-check-input is-invalid" formControlName="check"> 
+        <input type="checkbox" class="form-check-input is-invalid" formControlName="check" [ngClass]="{'is-invalid':ownerHotelData.get('check')?.hasError('required') }"> 
         <label class="form-check-label" for="defaultCheck1 "> I agree all statements in Terms and Conditions </label>
     </div>
     <div>

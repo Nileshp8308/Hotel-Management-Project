@@ -33,7 +33,9 @@ export class OwnersloginComponent {
       else{
         alert("Please Enter Valid Username and Password")
       }
-     
     })
+  }
+  forgotPass(){
+    this.router.navigateByUrl("/owner/forgotownerPass")
   }
 }

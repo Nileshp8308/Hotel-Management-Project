@@ -24,6 +24,9 @@ export class MyHotelComponent {
     })
   }
   async editHotelData(data:any){
+    this.service.newHotelRegFlag=false;
+    this.service.editHotelFlag=true;
+    this.service.edithotelid=data
    let url=this.url+"/"+data;
    this.editAPIresponce= await this.service.getApi(url).toPromise();
    this.editarray=this.editAPIresponce

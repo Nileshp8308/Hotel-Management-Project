@@ -1,1 +1,11 @@
-<p>admin-landing works!</p>
+<nav class="navbar navbar-dark bg-primary">
+    <div>
+      <i class="font-weight-bolder">Lotus <span class="text-body">Resort</span></i>
+      <span id="btn"> 
+        <button class="btn btn-outline-dark" routerLink="/home">Home</button>
+        <button class="btn btn-outline-dark" (click)="adminJourney('/admin/adminLogin')">Sign In</button>
+        <button class="btn btn-outline-dark" (click)="adminJourney('/admin/adminSignup')">Sign Up</button>
+        <button class="btn btn-outline-dark" (click)="adminJourney('/admin/adminViewhotel')" *ngIf="Showhoteltoadmin">View Hotel List</button>
+      </span>
+    </div>
+  </nav>

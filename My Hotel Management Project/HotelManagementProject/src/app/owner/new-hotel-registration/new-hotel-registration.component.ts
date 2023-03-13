@@ -20,28 +20,28 @@ export class NewHotelRegistrationComponent {
 
   ngOnInit(){
     // this.hotelid=this.service.HotelId
-    this.tseditAPIresponce=this.service.serviceeditAPIResponce
+    // this.tseditAPIresponce=this.service.serviceeditAPIResponce
     console.log(this.tseditAPIresponce)
+    if(this.service.newHotelRegFlag){
+      this.tseditAPIresponce={};
+    }
+    else{
+      this.tseditAPIresponce=this.service.serviceeditAPIResponce
+    }
    this.hotelData()
   }
-  // fetchidData(){
-  //   this.tseditAPIresponce.forEach((element:any) => {
-  //     if(this.hotelid==element.id){
-  //       this.editArray.push(element)
-  //     }
-  //   });
-  // }
+ 
   hotelData() {
     this.ownerHotelData=this.builder.group({
-      ownername:[this.tseditAPIresponce ? this.tseditAPIresponce.ownername:''],
-      ownermob:[this.tseditAPIresponce ? this.tseditAPIresponce.ownermob:''],
-      hotelname:[this.tseditAPIresponce ? this.tseditAPIresponce.hotelname:''],
-      hoteladdress:[this.tseditAPIresponce ? this.tseditAPIresponce.hoteladdress:''],
-      hotelmob:[this.tseditAPIresponce ? this.tseditAPIresponce.hotelmob:''],
-      hotelmenu:[this.tseditAPIresponce ? this.tseditAPIresponce.hotelmob:''],
-      room:[this.tseditAPIresponce ? this.tseditAPIresponce.room:''],
-      pass:[this.tseditAPIresponce ? this.tseditAPIresponce.pass:''],
-      check:[this.tseditAPIresponce ? this.tseditAPIresponce.check:'']
+      ownername:[this.tseditAPIresponce ? this.tseditAPIresponce.ownername:'',Validators.required],
+      ownermob:[this.tseditAPIresponce ? this.tseditAPIresponce.ownermob:'',[Validators.required,Validators.minLength(10)]],
+      hotelname:[this.tseditAPIresponce ? this.tseditAPIresponce.hotelname:'',Validators.required],
+      hoteladdress:[this.tseditAPIresponce ? this.tseditAPIresponce.hoteladdress:'',Validators.required],
+      hotelmob:[this.tseditAPIresponce ? this.tseditAPIresponce.hotelmob:'',[Validators.required,Validators.minLength(10)]],
+      hotelmenu:[this.tseditAPIresponce ? this.tseditAPIresponce.hotelmob:'',Validators.required],
+      room:[this.tseditAPIresponce ? this.tseditAPIresponce.room:'',Validators.required],
+      pass:[this.tseditAPIresponce ? this.tseditAPIresponce.pass:'',Validators.required],
+      check:[this.tseditAPIresponce ? this.tseditAPIresponce.check:'',Validators.requiredTrue]
     })
   }
   submit(data:any){
@@ -51,13 +51,28 @@ export class NewHotelRegistrationComponent {
       let user1=user.find((element:any)=>{
         return data.pass==element.pass
       })
-      if(user1){
+      // this.service.getApi(this.posturl).subscribe((res:any)=>{
+      //   let user2=res;
+      //   console.log(user2)
+      //   let user3=user2.find((element:any)=>{
+      //     return data.ownername==element.ownername
+      //   })
+      // })
+      if(user1 && this.service.editHotelFlag){
+        let url=this.posturl+"/"+this.service.edithotelid
+        this.service.patchAPI(url,data).subscribe((ref:any)=>{
+          console.log(res)
+          this.router.navigateByUrl('/owner/myhotel')
+          this.ownerHotelData.reset()
+        })
+      }
+      else if(user1){
         alert('Hotel Registered Sucessfully')
         this.service.postAPI(this.posturl,data).subscribe((res:any)=>{
           console.log(res)
         })
-        this.ownerHotelData.reset()
         this.router.navigateByUrl('/owner/myhotel')
+        this.ownerHotelData.reset()
       }
       else{
         alert('Enter Valid Password')
@@ -65,3 +80,4 @@ export class NewHotelRegistrationComponent {
     })
   }
 }
+

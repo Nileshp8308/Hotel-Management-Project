@@ -1,0 +1,118 @@
+<body>
+    <section class="h-100 bg-dark">
+      <form [formGroup]="adminDataForm" autocomplete="off">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+              
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">Owner registration form</h3>
+    
+                    <div class="row">
+                      <div class="form-outline mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1m">First name</label>
+                          <input type="text" id="form3Example1m" class="form-control form-control-lg is-invalid" formControlName="fname" [ngClass]="{'is-invalid':adminDataForm.get('fname')?.hasError('required') && adminDataForm.get('fname')?.touched}" appCustom />
+                         
+                        </div>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1n">Middle name</label>
+                          <input type="text" id="form3Example1n" class="form-control form-control-lg is-invalid" [ngClass]="{'is-invalid':adminDataForm.get('mname')?.hasError('required') && adminDataForm.get('mname')?.touched}" formControlName="mname" appCustom/>
+                       
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                      <div class="form-outline mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1m1">Last name</label>
+                          <input type="text" id="form3Example1m1" class="form-control form-control-lg" [ngClass]="{'is-invalid':adminDataForm.get('lname')?.hasError('required') && adminDataForm.get('lname')?.touched}" formControlName="lname" appCustom />
+                          
+                        </div>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <div class="form-outline">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                              <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                            </svg>
+                          <label class="form-label" for="form3Example1n1">Mobile no</label>
+                          <input type="text" id="form3Example1n1" class="form-control form-control-lg" formControlName="mob" [ngClass]="{'is-invalid':adminDataForm.get('mob')?.hasError('required') && adminDataForm.get('mob')?.touched || adminDataForm.get('mob')?.hasError('minlength') }" appCustom2/> 
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="form-outline mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                      <label class="form-label" for="form3Example8">Email</label>
+                      <input type="text" id="form3Example8" class="form-control form-control-lg is-invalid" formControlName="email" [ngClass]="{'is-invalid':adminDataForm.get('email')?.hasError('email') || adminDataForm.get('email')?.hasError('required') && adminDataForm.get('email')?.touched}" />
+                  </div>
+    
+                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+    
+                      <h6 class="mb-0 me-4">Gender: </h6>
+    
+                      <div class="form-check form-check-inline mb-0 me-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+                            </svg>
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="femaleGender"  value="female" formControlName="female" />
+                      </div>
+    
+                      <div class="form-check form-check-inline mb-0 me-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+                            </svg>
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="maleGender"    value="male" formControlName="male" />
+                        
+                      </div>
+    
+                  </div>
+    
+                    <div class="form-outline mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                      <label class="form-label" for="form3Example9">Username</label>
+                      <input type="text" id="form3Example9" class="form-control form-control-lg" formControlName="username" [ngClass]="{'is-invalid':adminDataForm.get('username')?.hasError('required') && adminDataForm.get('username')?.touched}"/>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                          <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg>
+                      <label class="form-label" for="form3Example90">Password</label>
+                      <input type="password" id="form3Example90" class="form-control form-control-lg" formControlName="pass" [ngClass]="{'is-invalid':adminDataForm.get('pass')?.hasError('required') && adminDataForm.get('pass')?.touched}"/>
+                      
+                    </div> 
+                    <div class="form-check d-flex justify-content-center mb-5 ">
+                      <input class="form-check-input me-2 is-invalid" type="checkbox" value="" id="form2Example3c" formControlName="check" [ngClass]="{'is-invalid':adminDataForm.get('check')?.hasError('required')}" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in <a >Terms and Conditions</a>
+                      </label>
+                    </div>
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="button" class="btn btn-primary btn-lg" [disabled]="adminDataForm.invalid" (click)="submit(adminDataForm.value)">Register</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    </section>
+    <button class="btn btn-warning" id="back" routerLink="/admin">Back</button>
+  </body>

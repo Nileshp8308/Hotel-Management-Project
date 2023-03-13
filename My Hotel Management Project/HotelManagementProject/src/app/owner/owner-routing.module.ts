@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AfterLoginComponent } from './after-login/after-login.component';
+import { ForgotOwnerPassComponent } from './forgot-owner-pass/forgot-owner-pass.component';
 import { MyHotelComponent } from './my-hotel/my-hotel.component';
 import { NewHotelRegistrationComponent } from './new-hotel-registration/new-hotel-registration.component';
 import { OwnerLandingComponent } from './owner-landing/owner-landing.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   {component:AfterLoginComponent, path:'afterlogin'},
   {component:OwnersloginComponent,path:'ownerlogin'},
   {component:NewHotelRegistrationComponent,path:'newhotel'},
-  {component:MyHotelComponent,path:'myhotel'}
+  {component:MyHotelComponent,path:'myhotel'},
+  {component:ForgotOwnerPassComponent,path:'forgotownerPass'}
 ];
 
 @NgModule({

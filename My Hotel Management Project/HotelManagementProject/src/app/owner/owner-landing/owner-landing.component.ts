@@ -10,9 +10,18 @@ import { ApiService } from 'src/app/api.service';
 export class OwnerLandingComponent {
   newhotel=false;
 
-  constructor(private service:ApiService){}
+  constructor(private service:ApiService,private router:Router){}
 
   ngOnInit(){
    this.newhotel=this.service.showmyHotels
+  }
+  ownerJourney(journey:string){
+    console.log(journey)
+    if(journey=="/owner/newhotel"){
+      this.service.newHotelRegFlag=true;
+      this.service.editHotelFlag=false;
+      console.log(this.service.newHotelRegFlag)
+    }
+    this.router.navigateByUrl(journey)
   }
 }

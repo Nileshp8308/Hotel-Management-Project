@@ -7,11 +7,17 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
 
+
   Getuserdata: any;
   Getownerdata: any;
   showmyHotels!: boolean;
   serviceeditAPIResponce: any;
   HotelId:any;
+  editHotelFlag: boolean=false;
+  edithotelid: any;
+  newHotelRegFlag: boolean=false;
+  showmyHotelstoadminflag!: boolean;
+  dataFromForgotpass="5"
 
   constructor(private http:HttpClient) { }
 
@@ -23,5 +29,8 @@ export class ApiService {
   }
   deleteAPI(url: string) {
      return this.http.delete(url)
+  }
+  patchAPI(url:any,data:any) {
+    return this.http.patch(url,data)
   }
 }

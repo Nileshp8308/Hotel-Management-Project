@@ -4,11 +4,13 @@
     <i class="font-weight-bolder">Lotus <span class="text-body">Resort</span></i>
     <span id="btn"> 
       <button class="btn btn-outline-dark" routerLink="/home">Home</button>
-      <button class="btn btn-outline-dark" routerLink="/owner/ownerlogin">Sign In</button>
-      <button class="btn btn-outline-dark" routerLink="/owner/ownerSignUp">Sign Up</button>
-      <button class="btn btn-outline-dark" routerLink="/owner/newhotel" *ngIf="newhotel">New Hotel Register</button>
-      <button class="btn btn-outline-dark"  routerLink="/owner/myhotel" *ngIf="newhotel">My Hotels</button>
+      <button class="btn btn-outline-dark" (click)="ownerJourney('/owner/ownerlogin')">Sign In</button>
+      <button class="btn btn-outline-dark" (click)="ownerJourney('/owner/ownerSignUp')">Sign Up</button>
+      <button class="btn btn-outline-dark" (click)="ownerJourney('/owner/newhotel')" *ngIf="newhotel">New Hotel Register</button>
+      <button class="btn btn-outline-dark" (click)="ownerJourney('/owner/myhotel')" *ngIf="newhotel">My Hotels</button>
     </span>
   </div>
 </nav>
+
+
 
