@@ -39,6 +39,7 @@ export class OwnersSignUpComponent {
     this.postAPIdata=this.service.postAPI(url,data).subscribe((api:any)=>{
       this.serverResponce=api
       console.log(this.serverResponce)
+      console.log(this.postAPIdata)
       if(this.serverResponce){
         this.router.navigateByUrl("/owner/ownerlogin")
       }

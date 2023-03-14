@@ -1,0 +1,31 @@
+<body>
+  <div id="container">
+    <input type="text" class="form-control" placeholder="Search Hotel By Name" [(ngModel)]="nameSearch">
+  </div>
+    <table class="table">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Owner Name</th>
+            <th scope="col">Owner Mob</th>
+            <th scope="col">Hotel Name</th>
+            <th scope="col">Hotel Address</th>
+            <th scope="col">Hotel Mobile</th>
+            <th scope="col">Hotel Menu</th>
+            <th scope="col">Room Availability</th>
+            <th scope="col">Book Hotel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of getHotelList | filter:nameSearch" >
+            <td>{{item.ownername}}</td>
+            <td>{{item.ownermob}}</td>
+            <td>{{item.hotelname}}</td>
+            <td>{{item.hoteladdress}}</td>
+            <td>{{item.hotelmob}}</td>
+            <td>{{item.hotelmenu}}</td>
+            <td>{{item.room}}</td>
+            <td> <button class="btn btn-success" (click)="bookHotel()">Booknow</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </body>

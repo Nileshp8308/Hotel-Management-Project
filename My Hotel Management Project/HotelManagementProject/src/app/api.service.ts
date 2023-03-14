@@ -17,7 +17,8 @@ export class ApiService {
   edithotelid: any;
   newHotelRegFlag: boolean=false;
   showmyHotelstoadminflag!: boolean;
-  dataFromForgotpass="5"
+  dataFromForgotpass:any;
+  showHotelstoUserFlag=false;
 
   constructor(private http:HttpClient) { }
 

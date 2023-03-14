@@ -4,6 +4,32 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "fname": "Nilesh",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "8668379754",
+      "email": "nileshp8308@gmail.com",
+      "female": "female",
+      "male": "male",
+      "username": "Nileshp8308",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 2
+    },
+    {
+      "fname": "Shubham",
+      "mname": "Atul",
+      "lname": "Patil",
+      "mob": "9623449295",
+      "email": "shubhamp881@gmail.com",
+      "female": "",
+      "male": "male",
+      "username": "ShubhamP881",
+      "pass": "Shubham@123",
+      "check": true,
+      "id": 3
     }
   ],
   "owner": [
@@ -37,6 +63,19 @@
       "pass": "Shubham@123",
       "check": true,
       "id": 3
+    },
+    {
+      "fname": "Kunal",
+      "mname": "Dipak",
+      "lname": "Patil",
+      "mob": "5544112233",
+      "email": "kunal@gmail.com",
+      "female": "female",
+      "male": "male",
+      "username": "Kunal8668",
+      "pass": "Kunal@123",
+      "check": true,
+      "id": 4
     }
   ],
   "admin": [
@@ -106,6 +145,49 @@
       "pass": "Nilesh@123",
       "check": true,
       "id": 25
+    },
+    {
+      "ownername": "Shubham",
+      "ownermob": "9623449295",
+      "hotelname": "GreenLeaf",
+      "hoteladdress": "Thane",
+      "hotelmob": "5522113344",
+      "hotelmenu": "Noodles",
+      "room": "6",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 26
+    }
+  ],
+  "hotelBookings": [
+    {
+      "username": "Nileshp8308",
+      "checkin": "2023-03-15",
+      "checkout": "2023-03-15",
+      "pass": "Nilesh@123",
+      "Mob": "8668379754",
+      "add": "Chalisgaon",
+      "id": 1
+    },
+    {
+      "username": "Nileshp8308",
+      "checkin": "2023-03-04",
+      "checkout": "2023-03-16",
+      "pass": "Nilesh@123",
+      "Amount": "1000",
+      "Mob": "8668379754",
+      "add": "Chalisgaon",
+      "id": 2
+    },
+    {
+      "username": "ShubhamP881",
+      "checkin": "2023-03-10",
+      "checkout": "2023-03-16",
+      "pass": "Shubham@123",
+      "Amount": "1000",
+      "Mob": "9623449295",
+      "add": "Chalisgaon",
+      "id": 3
     }
   ]
 }

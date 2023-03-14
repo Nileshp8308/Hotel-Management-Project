@@ -15,14 +15,14 @@
                         <div class="form-group"> 
                             <label for="exampleInputEmail1">New Password</label>
                             <input type="email" class="form-control form-control-sm is-invalid"
-                                placeholder="New Password" formControlName="Newpass" [ngClass]="{'is-invalid':forgotDataForm.get('Newpass')?.hasError('required') && forgotDataForm.get('Newpass')?.touched }" >
+                                placeholder="New Password" formControlName="Newpass" [ngClass]="{'is-invalid':forgotDataForm.get('Newpass')?.hasError('required') && forgotDataForm.get('Newpass')?.touched }" [(ngModel)]="newpass">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Confirm Password</label>
                             <input type="email" class="form-control form-control-sm is-invalid"
                                 placeholder="Confirm Password" formControlName="Confirmpass" [ngClass]="{'is-invalid':forgotDataForm.get('Confirmpass')?.hasError('required') && forgotDataForm.get('Confirmpass')?.touched }">
                         </div>
-                        <!-- <span *ngIf="forgotDataForm.get('Confirmpass')?.hasError('invalid')">password and Confirm Password must match</span> -->
+                         <span *ngIf="forgotDataForm.get('Confirmpass')?.hasError('confirmPasswordValidator')" class="error">password and Confirm Password must match</span> 
                         <button type="submit" class="btn btn-primary btn-block">Set password</button>
                     </form>
                 </div>

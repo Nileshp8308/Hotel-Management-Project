@@ -27,7 +27,6 @@ export class UserSignupComponent {
       email:['',[Validators.email,Validators.required]],
       female:[''],
       male:[''],
-      // other:['other'],
       username:['',Validators.required],
       pass:['',Validators.required],
       check:['',Validators.requiredTrue]
@@ -35,13 +34,13 @@ export class UserSignupComponent {
   }
   submit(data:any){
    let formsData=data
-   let url="http://localhost:3000/owner"
+   let url="http://localhost:3000/user"
     this.postAPIdata=this.service.postAPI(url,data).subscribe((api:any)=>{
       this.serverResponce=api
       console.log(this.serverResponce)
       if(this.serverResponce){
         this.studentDataForm.reset()
-        this.router.navigateByUrl("/owner")
+        this.router.navigateByUrl("/user/userLogin")
       }
     })
   }

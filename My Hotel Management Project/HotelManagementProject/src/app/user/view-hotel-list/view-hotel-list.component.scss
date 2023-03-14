@@ -1,0 +1,22 @@
+body{
+    width: 1500px;
+}
+.table{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+tr:nth-child(even){
+    background-color: #d1e7dd;
+}
+#container{
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 495px;
+}
+.form-control{
+    width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px burlywood;
+}

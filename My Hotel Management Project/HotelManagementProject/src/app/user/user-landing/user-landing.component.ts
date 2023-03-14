@@ -8,23 +8,16 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./user-landing.component.scss']
 })
 export class UserLandingComponent {
-  url="http://localhost:3000/post"
-
+  
+  showHotelstoUserFlag:any;
   constructor(private router:Router,private service:ApiService){}
 
-  redirect(){
-    this.router.navigateByUrl("user/userSignUp")
+  ngOnInit(){
+    this.showHotelstoUserFlag=this.service.showHotelstoUserFlag
   }
-  submit(data:any){
-    console.log(data)
-    this.service.getApi(this.url).subscribe((res:any)=>{
-      let user=res.forEach((element:any) => {
-        if(data.username==element.username && data.pass==element.pass){
-          if(this.service.Getownerdata){
-            this.router.navigateByUrl('/owner/afterlogin')
-          }
-        }
-      });
-    })
+  userJourney(data:any){
+   this.router.navigateByUrl(data)
   }
+
+
 }

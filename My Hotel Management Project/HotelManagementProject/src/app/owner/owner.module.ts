@@ -11,7 +11,6 @@ import { OwnersloginComponent } from './ownerslogin/ownerslogin.component';
 import { NewHotelRegistrationComponent } from './new-hotel-registration/new-hotel-registration.component';
 import { MyHotelComponent } from './my-hotel/my-hotel.component';
 import { ForgotOwnerPassComponent } from './forgot-owner-pass/forgot-owner-pass.component';
-
 @NgModule({
   declarations: [
     OwnerLandingComponent,
@@ -28,6 +27,7 @@ import { ForgotOwnerPassComponent } from './forgot-owner-pass/forgot-owner-pass.
     FormsModule,
     ReactiveFormsModule,
     SharedModule,
+    
   ]
 })
 export class OwnerModule { }
