@@ -1,5 +1,9 @@
 body {
-    background-image: linear-gradient(to right, #7B1FA2, #E91E63)
+    // background-image: linear-gradient(to right, #7B1FA2, #E91E63)
+    background-image: url("~src/assets/pexels-asad-photo-maldives-1266831.jpg");
+    background-size: cover;
+    height: 800px;
+    width: 1500px;
 }
 
 .section {
@@ -60,7 +64,8 @@ body {
 
 .booking-form .form-group {
     position: relative;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    width: 180px;
 }
 
 .booking-form .form-control {
@@ -132,7 +137,7 @@ body {
 }
 
 .booking-form select.form-control+.select-arrow:after {
-    content: '\279C';
+    content: '/279C';
     display: block;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg)
@@ -189,6 +194,18 @@ body {
 }
 .form-label{
     color: white;
+}
+#Username{
+    width: 400px;
+}
+.booking-form{
+    width: 500px;
+}
+#btn{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 50px;
+    cursor: pointer;
 }
 // .ng-untouched.ng-pristine.ng-invalid{
 //     width: 400px;

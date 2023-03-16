@@ -47,7 +47,7 @@
         <label class="form-check-label" for="defaultCheck1 "> I agree all statements in Terms and Conditions </label>
     </div>
     <div>
-        <button  class="btn btn-success" (click)="submit(ownerHotelData.value)">Submit</button>
+        <button  class="btn btn-success" (click)="submit(ownerHotelData.value)" [disabled]="ownerHotelData.invalid">Submit</button>
     </div>
     </form>
 </div>

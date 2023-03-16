@@ -9,32 +9,35 @@ import { ApiService } from 'src/app/api.service';
 })
 export class AdminLoginComponent {
 
-  getUrl="http://localhost:3000/admin"
-  constructor(private service:ApiService,private router:Router){}
+  getUrl = "http://localhost:3000/admin"
+  
+  constructor(private service: ApiService, private router: Router) { }
 
-  submit(data:any){
-    console.log(data)
-    this.service.getApi(this.getUrl).subscribe((res:any)=>{
-      console.log(res)
-      let user=res
-      let user2=user.find((element:any)=>{
-        return data.username==element.username && data.pass==element.pass
+  submit(data: any) {
+    if (data.username) {
+      console.log(data)
+      this.service.getApi(this.getUrl).subscribe((res: any) => {
+        console.log(res)
+        let user = res
+        let user2 = user.find((element: any) => {
+          return data.username == element.username && data.pass == element.pass
+        })
+        console.log(user2)
+        if (user2) {
+          alert("Log in Sucessfully")
+          this.service.showmyHotelstoadminflag = true
+          this.router.navigateByUrl("/admin")
+        }
+        else {
+          alert("Enter Valid Username And Password")
+        }
       })
-      console.log(user2)
-      if(user2){
-        alert("Log in Sucessfully")
-        this.service.showmyHotelstoadminflag=true
-        this.router.navigateByUrl("/admin")
-      }
-      else{
-        alert("Enter Valid Username And Password")
-      }
-    })
+    }
   }
-  redirect(){
+  redirect() {
     this.router.navigateByUrl("/admin/adminSignup")
   }
-  forgot(){
+  forgot() {
     console.log("Forgot")
     this.router.navigateByUrl("/admin/forgotPass")
   }

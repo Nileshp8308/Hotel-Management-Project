@@ -1,6 +1,7 @@
 <body>
+  <button class="btn btn-warning" id="btn" routerLink="/user">Back</button>
     <div id="bg">
-        <section class="h-100 gradient-form" style="background-color: #eee;">
+        <!-- <section class="h-100 gradient-form" style="background-color: #eee;"> -->
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-xl-10">
@@ -16,22 +17,22 @@
                 </div>
 
                 <form #signinForm="ngForm" (ngSubmit)="submit(signinForm.value)">
-                  <p>Please login to your account</p>
+                  <h4>  <p>Login as User</p> </h4>
 
                   <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example11">Username</label>
                     <input type="email" #username="ngModel" name="username" ngModel  class="form-control form-control is-invalid"
-                      placeholder="Phone number or email address" required [ngClass]="{'is-invalid': username.errors?.['required'] && username.touched}"/>
+                      placeholder="Enter Username" required [ngClass]="{'is-invalid': username.errors?.['required'] && username.touched}"/>
                   </div>
 
                   <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example22">Password</label>
-                    <input type="password" id="form2Example22" class="form-control form-control is-invalid" name="pass" ngModel #pass="ngModel" required [ngClass]="{'is-invalid':pass.touched && pass.errors?.['required']}" />
+                    <input type="password" id="form2Example22" class="form-control form-control is-invalid" name="pass" ngModel #pass="ngModel"  placeholder="Enter Password" required [ngClass]="{'is-invalid':pass.touched && pass.errors?.['required']}" />
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" >Log in</button>
-                    <a class="text-muted" routerLink="">Forgot password?</a>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" [disabled]="signinForm.invalid">Log in</button>
+                    <a class="success" (click)="Forgot()">Forgot password?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
@@ -48,7 +49,7 @@
       </div>
     </div>
   </div>
-</section>
+<!-- </section> -->
     </div>
 </body>
 

@@ -8,34 +8,36 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./ownerslogin.component.scss']
 })
 export class OwnersloginComponent {
-  url="http://localhost:3000/owner"
-  exactmatch=false;
+  url = "http://localhost:3000/owner"
+  exactmatch = false;
 
-  constructor(private router:Router,private service:ApiService){}
+  constructor(private router: Router, private service: ApiService) { }
 
-  redirect(){
+  redirect() {
     this.router.navigateByUrl("owner/ownerSignUp")
   }
-  submit(data:any){
+  submit(data: any) {
+    if (data.username) { 
     console.log(data)
-    this.service.getApi(this.url).subscribe((res:any)=>{
-      let user=res
-      let user1=user.find((element:any) => {
-        return data.username==element.username && data.pass==element.pass
+    this.service.getApi(this.url).subscribe((res: any) => {
+      let user = res
+      let user1 = user.find((element: any) => {
+        return data.username == element.username && data.pass == element.pass
       });
       console.log(user)
       console.log(user1)
-      if(user1){
+      if (user1) {
         alert("You are Log In Sucessfully")
-        this.service.showmyHotels=true;
+        this.service.showmyHotels = true;
         this.router.navigateByUrl("/owner")
       }
-      else{
+      else {
         alert("Please Enter Valid Username and Password")
       }
     })
   }
-  forgotPass(){
+  }
+  forgotPass() {
     this.router.navigateByUrl("/owner/forgotownerPass")
   }
 }

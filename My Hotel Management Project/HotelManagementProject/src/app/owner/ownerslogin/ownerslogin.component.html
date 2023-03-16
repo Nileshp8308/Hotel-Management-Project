@@ -16,7 +16,7 @@
                 </div>
 
                 <form #signinForm="ngForm" (ngSubmit)="submit(signinForm.value)">
-                  <p>Please login to your account</p>
+                  <h4>  <p> Login as Owner</p> </h4>
 
                   <div class="form-outline mb-4">
                       <label class="form-label" for="form2Example11">Username</label>
@@ -30,7 +30,7 @@
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-success btn-block fa-lg gradient-custom-2 mb-3" >Log in</button>
+                    <button class="btn btn-success btn-block fa-lg gradient-custom-2 mb-3" [disabled]="signinForm.invalid">Log in</button>
                     <a class="success" (click)="forgotPass()">Forgot password?</a>
                   </div>
 

@@ -9,6 +9,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { ViewHotelListComponent } from './view-hotel-list/view-hotel-list.component';
 import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
 import { FilterPipe } from './filter.pipe';
+import { UserForgotPassComponent } from './user-forgot-pass/user-forgot-pass.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FilterPipe } from './filter.pipe';
     UserLoginComponent,
     ViewHotelListComponent,
     HotelBookingComponent,
-    FilterPipe
+    FilterPipe,
+    UserForgotPassComponent
   ],
   imports: [
     CommonModule,

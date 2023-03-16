@@ -30,6 +30,97 @@
       "pass": "Shubham@123",
       "check": true,
       "id": 3
+    },
+    {
+      "fname": "Gaurav",
+      "mname": "Ashok",
+      "lname": "Devre",
+      "mob": "7350163050",
+      "email": "Gaurav7350@gmail.com",
+      "female": "",
+      "male": "male",
+      "username": "Gauravd7350",
+      "pass": "Gaurav@123",
+      "check": true,
+      "id": 4
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 5
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 6
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 7
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 8
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 9
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 10
     }
   ],
   "owner": [
@@ -76,6 +167,19 @@
       "pass": "Kunal@123",
       "check": true,
       "id": 4
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 5
     }
   ],
   "admin": [
@@ -107,6 +211,45 @@
       "pass": "Shubhamp@123",
       "check": true,
       "id": 3
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 4
+    },
+    {
+      "fname": "",
+      "mname": "",
+      "lname": "",
+      "mob": "",
+      "email": "",
+      "female": "",
+      "male": "",
+      "username": "",
+      "pass": "",
+      "check": "",
+      "id": 5
+    },
+    {
+      "fname": "Prachi",
+      "mname": "Sandeep",
+      "lname": "Patil",
+      "mob": "8983774063",
+      "email": "PrachiP881@Gmail.com",
+      "female": "",
+      "male": "male",
+      "username": "Prachip881",
+      "pass": "Prachi@123",
+      "check": true,
+      "id": 6
     }
   ],
   "hotelDetails": [
@@ -157,6 +300,18 @@
       "pass": "Nilesh@123",
       "check": true,
       "id": 26
+    },
+    {
+      "ownername": "Prashant",
+      "ownermob": "9850442817",
+      "hotelname": "Hotel Garva",
+      "hoteladdress": "Pune",
+      "hotelmob": "8855221133",
+      "hotelmenu": "Pav Bhaji",
+      "room": "4",
+      "pass": "Nilesh@123",
+      "check": true,
+      "id": 27
     }
   ],
   "hotelBookings": [
@@ -188,6 +343,26 @@
       "Mob": "9623449295",
       "add": "Chalisgaon",
       "id": 3
+    },
+    {
+      "username": "",
+      "checkin": "",
+      "checkout": "",
+      "pass": "",
+      "Amount": "",
+      "Mob": "",
+      "add": "",
+      "id": 4
+    },
+    {
+      "username": "Nileshp8308",
+      "checkin": "2023-03-16",
+      "checkout": "2023-03-07",
+      "pass": "Nilesh@123",
+      "Amount": "1000",
+      "Mob": "8668379754",
+      "add": "Chalisgaon",
+      "id": 5
     }
   ]
 }

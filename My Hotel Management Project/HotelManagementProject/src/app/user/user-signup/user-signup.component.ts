@@ -33,6 +33,7 @@ export class UserSignupComponent {
     })
   }
   submit(data:any){
+    if(data.fname){
    let formsData=data
    let url="http://localhost:3000/user"
     this.postAPIdata=this.service.postAPI(url,data).subscribe((api:any)=>{
@@ -43,5 +44,6 @@ export class UserSignupComponent {
         this.router.navigateByUrl("/user/userLogin")
       }
     })
+  }
   }
 }

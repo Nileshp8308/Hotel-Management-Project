@@ -34,6 +34,7 @@ export class OwnersSignUpComponent {
     })
   }
   submit(data:any){
+    if(data.fname){
    let formsData=data
    let url="http://localhost:3000/owner"
     this.postAPIdata=this.service.postAPI(url,data).subscribe((api:any)=>{
@@ -44,5 +45,6 @@ export class OwnersSignUpComponent {
         this.router.navigateByUrl("/owner/ownerlogin")
       }
     })
+  }
   }
 }

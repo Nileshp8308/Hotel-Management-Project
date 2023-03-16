@@ -36,11 +36,14 @@ ngOnInit(){
     })
   }
   submit(data:any){
+   
+   if(data.fname){
     console.log(data)
    this.service.postAPI(this.postURL,data).subscribe((res:any)=>{
     console.log(res)
    })
     this.adminDataForm.reset()
     this.router.navigateByUrl("/admin/adminLogin")
+  }
   }
 }

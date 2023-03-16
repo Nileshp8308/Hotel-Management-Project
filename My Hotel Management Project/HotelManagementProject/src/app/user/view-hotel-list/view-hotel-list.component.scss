@@ -2,7 +2,6 @@ body{
     width: 1500px;
 }
 .table{
-    width: 1000px;
     margin: auto;
     text-align: center;
     margin-top: 100px;
@@ -18,5 +17,10 @@ tr:nth-child(even){
 .form-control{
     width: 500px;
     text-align: center;
-    box-shadow: 0px 0px 10px 5px burlywood;
+    box-shadow: 0px 0px 10px 5px ;
+}
+#btn{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -70px;
 }

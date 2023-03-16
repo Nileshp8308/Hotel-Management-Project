@@ -103,7 +103,7 @@
                     </div>
   
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="button" class="btn btn-primary btn-lg" [disabled]="adminDataForm.invalid" (click)="submit(adminDataForm.value)">Register</button>
+                      <button type="button" class="btn btn-primary btn-lg" [disabled]="adminDataForm.invalid || !adminDataForm" (click)="submit(adminDataForm.value)">Register</button>
                     </div>
                   </div>
                 </div>

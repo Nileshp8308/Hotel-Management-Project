@@ -1,8 +1,5 @@
 .h-100.gradient-form{
-    background-image: url("~src/assets/pexels-suzy-hazelwood-1629236.jpg");
-    background-size: cover;
-    height: 750px;
-    width: 1500px;
+   
 }
 .card-body.p-md-5.mx-md-4{
     padding: 2rem !important;
@@ -15,4 +12,21 @@
 }
 .col-xl-10{
     width: 74.333333%;
+}
+.card.rounded-3.text-black{
+    background-color: antiquewhite;
+}
+.success{
+    cursor: pointer;
+}
+body{
+    background-image: url("~src/assets/pexels-suzy-hazelwood-1629236.jpg");
+    background-size: cover;
+    height: 850px;
+    width: 1500px;
+}
+#btn{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 60px;
 }

@@ -1,13 +1,16 @@
 <body>
+  
     <section class="h-100 bg-dark">
+      
       <form [formGroup]="studentDataForm" autocomplete="off">
+       
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col">
             <div class="card card-registration my-4">
-              <div class="row g-0">
+              <!-- <div class="row g-0"> -->
               
-                <div class="col-xl-6">
+                <!-- <div class="col-xl-6"> -->
                   <div class="card-body p-md-5 text-black">
                     <h3 class="mb-5 text-uppercase">User registration form</h3>
     
@@ -106,13 +109,15 @@
                       <button type="button" class="btn btn-primary btn-lg" [disabled]="studentDataForm.invalid" (click)="submit(studentDataForm.value)">Register</button>
                     </div>
                   </div>
-                </div>
-              </div>
+                <!-- </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
       </div>
     </form>
+    <button class="btn btn-warning" id="btn" routerLink="/user">Back</button>
     </section>
+   
   </body>
   
