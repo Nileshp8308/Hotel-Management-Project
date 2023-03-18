@@ -43,84 +43,6 @@
       "pass": "Gaurav@123",
       "check": true,
       "id": 4
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 5
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 6
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 7
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 8
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 9
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 10
     }
   ],
   "owner": [
@@ -167,19 +89,6 @@
       "pass": "Kunal@123",
       "check": true,
       "id": 4
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 5
     }
   ],
   "admin": [
@@ -211,32 +120,6 @@
       "pass": "Shubhamp@123",
       "check": true,
       "id": 3
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 4
-    },
-    {
-      "fname": "",
-      "mname": "",
-      "lname": "",
-      "mob": "",
-      "email": "",
-      "female": "",
-      "male": "",
-      "username": "",
-      "pass": "",
-      "check": "",
-      "id": 5
     },
     {
       "fname": "Prachi",
@@ -343,16 +226,6 @@
       "Mob": "9623449295",
       "add": "Chalisgaon",
       "id": 3
-    },
-    {
-      "username": "",
-      "checkin": "",
-      "checkout": "",
-      "pass": "",
-      "Amount": "",
-      "Mob": "",
-      "add": "",
-      "id": 4
     },
     {
       "username": "Nileshp8308",

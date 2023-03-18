@@ -24,12 +24,12 @@
                                 placeholder="Confirm Password" formControlName="Confirmpass" [ngClass]="{'is-invalid':forgotDataForm.get('Confirmpass')?.hasError('required') && forgotDataForm.get('Confirmpass')?.touched }">
                         </div>
                          <span *ngIf="forgotDataForm.get('Confirmpass')?.hasError('confirmPasswordValidator')" class="error">password and Confirm Password must match</span> 
-                        <button type="submit" class="btn btn-primary btn-block" [disabled]="forgotDataForm.invalid">Set password</button>
+                        <button type="submit" class="btn btn-primary btn-block" >Set password</button>
                     </form>
                 </div>
             </div>
         </div>
-
+        <!-- [disabled]="forgotDataForm.invalid" -->
 </div>
 </body>
 

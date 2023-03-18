@@ -42,7 +42,6 @@ export class ForgotPasswordComponent {
   }
 
   submit(data: any) {
-    if (data.Mob) {
       console.log(data)
       this.service.getApi(this.getUrl).subscribe((res: any) => {
         console.log(res)
@@ -76,7 +75,7 @@ export class ForgotPasswordComponent {
           this.router.navigateByUrl("/admin/adminLogin")
         }
       })
-    }
+    
   }
 
   // custom(custom:any){

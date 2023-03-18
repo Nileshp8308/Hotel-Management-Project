@@ -35,7 +35,6 @@ export class UserForgotPassComponent {
     );
   }
   submit(data: any) {
-    if(data.Mob){
     this.service.getApi(this.getUrl).subscribe((res: any) => {
       console.log(res)
       let user = res
@@ -60,6 +59,5 @@ export class UserForgotPassComponent {
         alert("Enter Registered Mobile Number")
       }
     })
-    }
   }
 }

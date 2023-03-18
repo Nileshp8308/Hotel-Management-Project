@@ -17,25 +17,25 @@ export class OwnersloginComponent {
     this.router.navigateByUrl("owner/ownerSignUp")
   }
   submit(data: any) {
-    if (data.username) { 
-    console.log(data)
-    this.service.getApi(this.url).subscribe((res: any) => {
-      let user = res
-      let user1 = user.find((element: any) => {
-        return data.username == element.username && data.pass == element.pass
-      });
-      console.log(user)
-      console.log(user1)
-      if (user1) {
-        alert("You are Log In Sucessfully")
-        this.service.showmyHotels = true;
-        this.router.navigateByUrl("/owner")
-      }
-      else {
-        alert("Please Enter Valid Username and Password")
-      }
-    })
-  }
+    // if (data.username) {
+      console.log(data)
+      this.service.getApi(this.url).subscribe((res: any) => {
+        let user = res
+        let user1 = user.find((element: any) => {
+          return data.username == element.username && data.pass == element.pass
+        });
+        console.log(user)
+        console.log(user1)
+        if (user1) {
+          alert("You are Log In Sucessfully")
+          this.service.showmyHotels = true;
+          this.router.navigateByUrl("/owner")
+        }
+        else {
+          alert("Please Enter Valid Username and Password")
+        }
+      })
+    // }
   }
   forgotPass() {
     this.router.navigateByUrl("/owner/forgotownerPass")

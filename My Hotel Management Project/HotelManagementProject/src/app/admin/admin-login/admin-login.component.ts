@@ -14,7 +14,7 @@ export class AdminLoginComponent {
   constructor(private service: ApiService, private router: Router) { }
 
   submit(data: any) {
-    if (data.username) {
+    
       console.log(data)
       this.service.getApi(this.getUrl).subscribe((res: any) => {
         console.log(res)
@@ -32,7 +32,6 @@ export class AdminLoginComponent {
           alert("Enter Valid Username And Password")
         }
       })
-    }
   }
   redirect() {
     this.router.navigateByUrl("/admin/adminSignup")

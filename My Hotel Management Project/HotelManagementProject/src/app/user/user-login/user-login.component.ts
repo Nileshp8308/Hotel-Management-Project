@@ -16,7 +16,7 @@ export class UserLoginComponent {
     this.router.navigateByUrl("user/userSignUp")
   }
   submit(data:any){
-    if(data.username){
+    
     console.log(data)
      this.service.getApi(this.url).subscribe((res:any)=>{
       let user=res;
@@ -34,7 +34,6 @@ export class UserLoginComponent {
         alert('Enter Valid Username And Password')
        }
      })
-    }
   }
   Forgot(){
     this.router.navigateByUrl("/user/userForgot")

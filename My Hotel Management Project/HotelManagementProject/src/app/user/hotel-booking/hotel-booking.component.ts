@@ -31,7 +31,7 @@ export class HotelBookingComponent {
   }
 
   submit(data: any) {
-    if (data.username) {
+    // if (data.username) {
       console.log(data);
       this.service.getApi(this.getUrl).subscribe((res: any) => {
         console.log(res)
@@ -39,6 +39,7 @@ export class HotelBookingComponent {
         let user2 = user.find((element: any) => {
           return data.username == element.username && data.pass == element.pass
         })
+        console.log(user2)
         if (user2) {
           alert('Booked Hotel Sucessfully');
           this.service.postAPI(this.postUrl, data).subscribe((res: any) => {
@@ -50,7 +51,7 @@ export class HotelBookingComponent {
           alert("Enter Valid Username And Password")
         }
       })
-    }
+    // }
   }
 
   back() {
