@@ -17,7 +17,6 @@ export class OwnersloginComponent {
     this.router.navigateByUrl("owner/ownerSignUp")
   }
   submit(data: any) {
-    // if (data.username) {
       console.log(data)
       this.service.getApi(this.url).subscribe((res: any) => {
         let user = res
@@ -27,6 +26,8 @@ export class OwnersloginComponent {
         console.log(user)
         console.log(user1)
         if (user1) {
+          this.service.ownerPassword=data.pass 
+          console.log(this.service.ownerPassword);
           alert("You are Log In Sucessfully")
           this.service.showmyHotels = true;
           this.router.navigateByUrl("/owner")
@@ -35,7 +36,6 @@ export class OwnersloginComponent {
           alert("Please Enter Valid Username and Password")
         }
       })
-    // }
   }
   forgotPass() {
     this.router.navigateByUrl("/owner/forgotownerPass")

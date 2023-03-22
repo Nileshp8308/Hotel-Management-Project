@@ -50,7 +50,7 @@ export class NewHotelRegistrationComponent {
       this.service.getApi(this.geturl).subscribe((res: any) => {
         let user = res
         let user1 = user.find((element: any) => {
-          return data.pass == element.pass
+          return data.pass == element.pass && data.pass == this.service.ownerPassword
         })
         // this.service.getApi(this.posturl).subscribe((res:any)=>{
         //   let user2=res;

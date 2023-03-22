@@ -22,6 +22,10 @@ export class OwnerLandingComponent {
       this.service.editHotelFlag=false;
       console.log(this.service.newHotelRegFlag)
     }
+    else if(journey=="/owner/myhotel"){
+      this.service.myHotelflag=true
+      // this.service.ownerPassword=""
+    }
     this.router.navigateByUrl(journey)
   }
 }
