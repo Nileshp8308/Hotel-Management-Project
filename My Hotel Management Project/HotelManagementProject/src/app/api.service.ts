@@ -5,9 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-
-
-
+  
   Getuserdata: any;
   Getownerdata: any;
   showmyHotels!: boolean;

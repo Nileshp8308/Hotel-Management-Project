@@ -4,28 +4,30 @@ body {
     background-size: cover;
     height: 800px;
     width: 1500px;
+    position:absolute ;
 }
 
 .section {
-    position: relative;
+    position: absolute;
     height: 100vh
 }
 
 .section .section-center {
     position: absolute;
-    top: 50%;
-    left: 0;
+    top:15%;
+    left: 500px;
     right: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
 #booking {
-    font-family: 'Raleway', sans-serif
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
 }
 
 .booking-form {
-    position: relative;
+    position: absolute;
     max-width: 642px;
     width: 100%;
     margin: auto;
@@ -206,6 +208,13 @@ body {
     margin-left: 60px;
     margin-top: 50px;
     cursor: pointer;
+}
+.booking-form{
+    width: 500px;
+    // position: absolute;
+    // top: -500px;
+    // left: 500px;
+    // height: 560px;
 }
 // .ng-untouched.ng-pristine.ng-invalid{
 //     width: 400px;

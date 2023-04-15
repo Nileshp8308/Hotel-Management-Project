@@ -1,26 +1,183 @@
 body{
     width: 1500px;
+    height: 1300px;
 }
-#Outer{
-    width: 500px;
-}
-.card.card-registration.my-4{
-    width: 600px;
-    margin: auto;
-}
-.card-body.p-md-5.text-black{
-    width: 504px;
-    margin-left: 40px;
-}
+// #Outer{
+//     width: 500px;
+// }
+// .card.card-registration.my-4{
+//     width: 600px;
+//     margin: auto;
+// }
+// .card-body.p-md-5.text-black{
+//     width: 504px;
+//     margin-left: 40px;
+// }
 .h-100.bg-dark{
     background-image: url("~src/assets/4882066.jpg");
-    background-size: cover;
+    background-size: 1500px 1300px;
+    background-repeat: no-repeat;
 }
 #back{
     position: relative;
     margin-top: -2400px;
     margin-left: 40px;
 }
-.card.card-registration.my-4{
+// .card.card-registration.my-4{
+//     background-color: thistle;
+// }
+
+#container{
     background-color: thistle;
+    height: 970px;
+    width: 500px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    box-shadow: 0px 1px 5px 7px whitesmoke;
 }
+// .example-full-width{
+//     width: 200px;
+//     position: relative;
+//     top: 50px;
+// }
+#Finp {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    top: 30px;
+    position: relative;
+}
+#Sinp{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    top: 45px;
+    position: relative;
+}
+#Linp{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    top: 60px;
+    position: relative;
+    // background-color: white;
+}
+#mobile{
+    width: 100%;
+    top: 75px;
+    position: relative;
+    min-width: 150px;
+    max-width: 500px;
+}
+#btnradio{
+ position: relative;
+ top: 105px;
+left: 110px
+}
+#user{
+    width: 100%;
+    top: 125px;
+    position: relative;
+    min-width: 150px;
+    max-width: 500px;
+}
+#Email{
+    width: 100%;
+    top: 90px;
+    position: relative;
+    min-width: 170px;
+    max-width: 500px;
+}
+#password{
+    width: 100%;
+    top: 140px;
+    position: relative;
+    min-width: 190px;
+    max-width: 500px; 
+}
+#checkbox{
+    position: relative;
+    top: 140px;
+    left: 75px;
+}
+#btn{
+    position: relative;
+    top: 165px;
+    left: 190px;
+}
+#terms{
+    position: relative;
+    left: 10px;
+}
+.mat-mdc-input-element.ng-tns-c131-0.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+    
+}
+.mat-mdc-input-element.ng-tns-c131-1.ng-pristine.ng-invalid.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+}
+.mat-mdc-input-element.ng-tns-c131-2.ng-pristine.ng-invalid.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+}
+.mat-mdc-input-element.ng-tns-c131-3.ng-pristine.ng-invalid.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+}
+.mat-mdc-input-element.ng-tns-c131-4.ng-pristine.ng-invalid.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+}
+.mat-mdc-input-element.ng-tns-c131-5.ng-pristine.ng-invalid.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+}
+.mat-mdc-input-element.ng-tns-c131-6.ng-pristine.ng-invalid.mat-mdc-form-field-input-control.mdc-text-field__input.cdk-text-field-autofill-monitored{
+    height: 30px;
+}
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-0.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-1.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-2.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-3.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-4.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-5.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// .mat-mdc-form-field.example-full-width.ng-tns-c131-6.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted{
+//     width: 400px;
+// }
+// // .mat-mdc-text-field-wrapper.mdc-text-field.ng-tns-c131-0.mdc-text-field--filled.mdc-text-field--invalid{
+// //     width: 400px;
+// // }
+// .mat-mdc-form-field-infix.ng-tns-c131-0{
+//     width: 400px;
+// }
+// .mat-mdc-form-field-flex.ng-tns-c131-0{
+//     width: 400px;
+// }
+.mat-mdc-form-field{
+    width: 400px;
+    position: relative;
+    left: 50px;
+}
+.mb-5.text-uppercase{
+    position: relative;
+    top: 45px;
+    left: 110px;
+}
+// .mdc-floating-label.mat-mdc-floating-label.ng-tns-c131-0.ng-star-inserted{
+//     left: 10px;
+// }
+// .mdc-radio__outer-circle{
+//     border-color: darkblue;
+// }
+// .mdc-radio__inner-circle{
+//     border-color: darkblue;
+// }

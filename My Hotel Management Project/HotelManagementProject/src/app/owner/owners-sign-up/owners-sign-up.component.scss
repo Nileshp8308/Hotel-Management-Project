@@ -1,5 +1,6 @@
 body{
     width: 1500px;
+    height: 1300px;
 }
 #Outer{
     width: 500px;
@@ -7,6 +8,7 @@ body{
 .card.card-registration.my-4{
     width: 600px;
     margin: auto;
+    box-shadow: 0px 1px 5px 7px lightcyan;
 }
 .card-body.p-md-5.text-black{
     width: 504px;
@@ -14,10 +16,15 @@ body{
 }
 .h-100.bg-dark{
     background-image: url("~src/assets/4882066.jpg");
-    background-size: cover;
+    background-size: 1500px 1300px;
+    background-repeat: no-repeat;
 }
 #back{
     position: relative;
     margin-top: -2400px;
     margin-left: 40px;
+}
+h2{
+    position: relative;
+    left: 65px;
 }

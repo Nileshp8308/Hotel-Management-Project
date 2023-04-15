@@ -1,6 +1,6 @@
 <body>
-    <section class="h-100 bg-dark">
-      <form [formGroup]="adminDataForm" autocomplete="off">
+  <section class="h-100 bg-dark">
+    <!-- <form [formGroup]="adminDataForm" autocomplete="off">
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col">
@@ -112,7 +112,81 @@
           </div>
         </div>
       </div>
-    </form>
-    </section>
-    <button class="btn btn-warning" id="back" routerLink="/admin">Back</button>
-  </body>
+    </form> -->
+    <div id="container">
+      <form [formGroup]="adminDataForm" autocomplete="off" (ngSubmit)="submit(adminDataForm.value)">
+        <h2 class="mb-5 text-uppercase">Admin registration form</h2>
+        <div id="Finp">
+          <mat-form-field class="example-full-width">
+            <mat-label>First name</mat-label>
+            <input matInput placeholder="Enter Your First name" formControlName="fname">
+            <!-- <mat-error *ngIf="adminDataForm.get('fname')?.hasError('required')">Due Date is required for
+              Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="Sinp">
+          <mat-form-field class="example-full-width">
+            <mat-label>Middle name</mat-label>
+            <input matInput placeholder="Enter Your Middle name" formControlName="mname">
+            <!-- <mat-error *ngIf="adminDataForm.get('mname')?.hasError('required')">Due Date is required for
+              Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="Linp">
+          <mat-form-field class="example-full-width">
+            <mat-label>Last name</mat-label>
+            <input matInput placeholder="Enter Your Last name" formControlName="lname">
+            <!-- <mat-error *ngIf="adminDataForm.get('lname')?.hasError('required')">Due Date is required for
+              Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="mobile">
+          <mat-form-field class="example-full-width">
+            <mat-label>Mobile Number</mat-label>
+            <input matInput placeholder="Enter Your Mobile number" formControlName="mob">
+            <!-- <mat-error *ngIf="adminDataForm.get('mob')?.hasError('required')">Due Date is required for Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="Email">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter Your Email" formControlName="email">
+            <!-- <mat-error *ngIf="adminDataForm.get('email')?.hasError('required')">Due Date is required for
+              Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="btnradio">
+          <mat-radio-group formControlName="gender">
+            <mat-label>Gender</mat-label>
+            <mat-radio-button value="female" class="primary">Female </mat-radio-button>
+            <mat-radio-button value="male">Male </mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div id="user">
+          <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Enter Your Username" formControlName="username">
+            <!-- <mat-error *ngIf="adminDataForm.get('username')?.hasError('required')">Due Date is required for
+              Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="password">
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter Your Password" formControlName="pass" type="password">
+            <!-- <mat-error *ngIf="adminDataForm.get('pass')?.hasError('required')">Due Date is required for
+              Tasks</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div id="checkbox">
+          <input type="checkbox" formControlName="check" class="form-check-input">
+          <span id="terms"><label for="">I Agree All Statements In Terms & Conditions</label></span>
+        </div>
+        <div id="btn">
+          <button mat-raised-button color="primary" [disabled]="adminDataForm.invalid">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <button class="btn btn-warning" id="back" routerLink="/admin">Back</button>
+</body>

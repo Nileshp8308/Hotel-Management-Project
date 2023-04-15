@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NewHotrlRegistrationComponent } from './new-hotrl-registration/new-hotrl-registration.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NewHotrlRegistrationComponent } from './new-hotrl-registration/new-hotr
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

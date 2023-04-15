@@ -1,3 +1,4 @@
+
 body{
     background-image: url("~src/assets/the-anam-_twiIcIsp2s-unsplash.jpg");
     background-size: cover;
@@ -54,6 +55,42 @@ body{
     position: absolute;
     font-size: 24px;
     font-weight:600 ;
+}
+#eye{
+    position: relative;
+    left: 380px;
+    bottom: 30px;
+}
+#customRadio2{
+    position: relative;
+    left: -390px;
+    top: 40px;
+}
+#rdlabel{
+    position: relative;
+    left: 20px;
+}
+#rdlabel2{
+    position: relative; 
+    top: -38px;
+    left: 128px;
+}
+#customRadio3{
+    position: relative;
+    left: -287px;
+    top: 2px;
+}
+#terms{
+    position: relative;
+    top: -30px;
+}
+#btn{
+    position: relative;
+    top: -35px;
+}
+#dropdown{
+    position: relative;
+    right: 255px;
 }
 
 

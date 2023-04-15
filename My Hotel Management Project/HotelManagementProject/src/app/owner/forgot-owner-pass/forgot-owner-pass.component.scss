@@ -24,13 +24,14 @@ form{
 
 .btn{
 	font-size: 14px;
-	margin-top:20px;
+	margin-top:55px;
     margin-left: 115px;
 }
 
 .login-form{ 
 	width:400px;
     margin-left: 800px;
+	height: 370px;
 }
 
 .sign-up{
@@ -43,13 +44,15 @@ span{
 }
 .error{
 	color: red;
+	position: absolute;
+    top: 265px;
 }
 .form-group{
     padding-top: 5px;
 }
 #btn{
     font-size: 14px;
-    margin-top: -666px;
+    margin-top: -650px;
     position: absolute;
     margin-left: -1300px;
 }

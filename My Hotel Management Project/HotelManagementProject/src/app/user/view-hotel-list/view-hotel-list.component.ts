@@ -23,28 +23,28 @@ export class ViewHotelListComponent {
       this.getHotelList=res
     })
   }
-  async editHotelData(data:any){
-    this.service.newHotelRegFlag=false;
-    this.service.editHotelFlag=true;
-    this.service.edithotelid=data
-   let url=this.url+"/"+data;
-   this.editAPIresponce= await this.service.getApi(url).toPromise();
-   this.editarray=this.editAPIresponce
-   this.service.serviceeditAPIResponce=this.editarray;
-   console.log(this.service.serviceeditAPIResponce.ownername)
-   this.router.navigateByUrl("/owner/newhotel")
-  }
-async deleteHotelData(data:any){
-  let url=this.url+"/"+data
-  let id=data
-  this.deleteApiresponce= await this.service.deleteAPI(url).toPromise()
-   console.log(this.deleteApiresponce)
-     this.service.getApi(this.url).subscribe((res:any)=>{
-       this.resAfterDeleteAPI=res
-      console.log(this.resAfterDeleteAPI)
-      this.getHotelList=this.resAfterDeleteAPI
-     })
-  }
+  // async editHotelData(data:any){
+  //   this.service.newHotelRegFlag=false;
+  //   this.service.editHotelFlag=true;
+  //   this.service.edithotelid=data
+  //  let url=this.url+"/"+data;
+  //  this.editAPIresponce= await this.service.getApi(url).toPromise();
+  //  this.editarray=this.editAPIresponce
+  //  this.service.serviceeditAPIResponce=this.editarray;
+  //  console.log(this.service.serviceeditAPIResponce.ownername)
+  //  this.router.navigateByUrl("/owner/newhotel")
+  // }
+// async deleteHotelData(data:any){
+//   let url=this.url+"/"+data
+//   let id=data
+//   this.deleteApiresponce= await this.service.deleteAPI(url).toPromise()
+//    console.log(this.deleteApiresponce)
+//      this.service.getApi(this.url).subscribe((res:any)=>{
+//        this.resAfterDeleteAPI=res
+//       console.log(this.resAfterDeleteAPI)
+//       this.getHotelList=this.resAfterDeleteAPI
+//      })
+//   }
   bookHotel(){
     this.router.navigateByUrl("/user/bookHotel")
   }

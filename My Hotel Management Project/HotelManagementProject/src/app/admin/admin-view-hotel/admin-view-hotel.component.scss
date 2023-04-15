@@ -18,11 +18,12 @@
 }
 #back{
     position: absolute;
-    margin-top: -320px;
-    margin-left: 40px;
+    left: 50px;
+    top: 25px;
 }
 .table{
     text-align: center;
+    width: 1500px;;
 }
 tr:nth-child(even){
     background-color: #d1e7dd;

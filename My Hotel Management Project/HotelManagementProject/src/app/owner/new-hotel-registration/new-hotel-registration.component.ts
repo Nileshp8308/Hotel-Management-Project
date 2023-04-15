@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
@@ -9,12 +9,16 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./new-hotel-registration.component.scss']
 })
 export class NewHotelRegistrationComponent {
+
+  @ViewChild('password') showhidepass!:ElementRef
+
   ownerHotelData!: FormGroup
   geturl = "http://localhost:3000/owner"
   posturl = "http://localhost:3000/hotelDetails"
   tseditAPIresponce: any;
   hotelid: any;
   editArray: any = []
+  viewer:boolean=false;
 
   constructor(private service: ApiService, private builder: FormBuilder, private router: Router) { }
 
@@ -27,6 +31,9 @@ export class NewHotelRegistrationComponent {
     }
     else {
       this.tseditAPIresponce = this.service.serviceeditAPIResponce
+      console.log(this.tseditAPIresponce);
+      console.log(this.tseditAPIresponce.room);
+      
     }
     this.hotelData()
   }
@@ -39,11 +46,17 @@ export class NewHotelRegistrationComponent {
       hoteladdress: [this.tseditAPIresponce ? this.tseditAPIresponce.hoteladdress : '', Validators.required],
       hotelmob: [this.tseditAPIresponce ? this.tseditAPIresponce.hotelmob : '', [Validators.required, Validators.minLength(10)]],
       hotelmenu: [this.tseditAPIresponce ? this.tseditAPIresponce.hotelmenu : '', Validators.required],
-      room: [this.tseditAPIresponce ? this.tseditAPIresponce.room : '', Validators.required],
+      room: [this.tseditAPIresponce ? this.tseditAPIresponce.room : '5', Validators.required],
       pass: [this.tseditAPIresponce ? this.tseditAPIresponce.pass : '', Validators.required],
       check: [this.tseditAPIresponce ? this.tseditAPIresponce.check : '', Validators.requiredTrue]
     })
   }
+
+  visible(){
+    this.viewer=!this.viewer
+    this.showhidepass.nativeElement.type=this.viewer? "text":"password"; 
+  }
+
   submit(data: any) {
     if (data.ownername) {
       console.log(data)
@@ -79,7 +92,7 @@ export class NewHotelRegistrationComponent {
           alert('Enter Valid Password')
         }
       })
-    }
+    }  
   }
 }
 

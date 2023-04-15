@@ -16,6 +16,9 @@ export class OwnersloginComponent {
   redirect() {
     this.router.navigateByUrl("owner/ownerSignUp")
   }
+
+  //Function to validate owner 
+
   submit(data: any) {
       console.log(data)
       this.service.getApi(this.url).subscribe((res: any) => {

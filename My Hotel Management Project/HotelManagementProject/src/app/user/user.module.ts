@@ -10,6 +10,7 @@ import { ViewHotelListComponent } from './view-hotel-list/view-hotel-list.compon
 import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
 import { FilterPipe } from './filter.pipe';
 import { UserForgotPassComponent } from './user-forgot-pass/user-forgot-pass.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { UserForgotPassComponent } from './user-forgot-pass/user-forgot-pass.com
     CommonModule,
     UserRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class UserModule { }

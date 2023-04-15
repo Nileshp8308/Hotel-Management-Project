@@ -1,5 +1,6 @@
 
 <body>
+    
   <div id="cont">
     <div id="icon">
     <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
@@ -35,18 +36,31 @@
         <input type="text" class="form-control form-control is-invalid" formControlName="hotelmenu" [ngClass]="{'is-invalid':ownerHotelData.get('hotelmenu')?.hasError('required') && ownerHotelData.get('hotelmenu')?.touched }"appCustom>
     </div>
     <div class="container">
-        <label for="" class="col-sm-2 col-form-label">Room Avaible</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="room" [ngClass]="{'is-invalid':ownerHotelData.get('room')?.hasError('required') && ownerHotelData.get('room')?.touched }" appCustom2>
+        <label for="" class="col-sm-2 col-form-label">Room Availability</label>
+        <!-- <input type="" class="form-control form-control is-invalid" formControlName="room" [ngClass]="{'is-invalid':ownerHotelData.get('room')?.hasError('required') && ownerHotelData.get('room')?.touched }" appCustom2> -->
+        <select name="" id="dropdown" formControlName="room">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
     </div>
     <div class="container">
         <label for="" class="col-sm-2 col-form-label">Password</label>
-        <input type="text" class="form-control form-control is-invalid" formControlName="pass" [ngClass]="{'is-invalid':ownerHotelData.get('pass')?.hasError('required') && ownerHotelData.get('pass')?.touched }">
+        <input type="password" class="form-control form-control is-invalid" formControlName="pass" [ngClass]="{'is-invalid':ownerHotelData.get('pass')?.hasError('required') && ownerHotelData.get('pass')?.touched }" #password>
+        <span id="eye" (click)="visible()"><i [ngClass]="viewer?'bi bi-eye-slash-fill':'bi bi-eye-fill'"></i></span>
     </div>
-    <div>
+    <div id="terms">
         <input type="checkbox" class="form-check-input is-invalid" formControlName="check" [ngClass]="{'is-invalid':ownerHotelData.get('check')?.hasError('required') }"> 
         <label class="form-check-label" for="defaultCheck1 "> I agree all statements in Terms and Conditions </label>
     </div>
-    <div>
+    <div id="btn">
         <button  class="btn btn-success" (click)="submit(ownerHotelData.value)" [disabled]="ownerHotelData.invalid">Submit</button>
     </div>
     </form>

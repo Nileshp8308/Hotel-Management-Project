@@ -35,12 +35,8 @@ export class ForgotPasswordComponent {
     })
 
   }
-  ngAfterViewInit() {
-    // console.log(this.input.nativeElement.value)
-    // this.newpassValue=this.input.nativeElement.value
-    // console.log(this.newpassValue)
-  }
-
+  
+// Function Used To Show  Error Msg When Password And Confirm Password are not same and also Update password by using Patch Api 
   submit(data: any) {
       console.log(data)
       this.service.getApi(this.getUrl).subscribe((res: any) => {
@@ -77,15 +73,5 @@ export class ForgotPasswordComponent {
       })
     
   }
-
-  // custom(custom:any){
-  //   // if(this.service.dataFromForgotpass){
-  //   //   this.newpassValue=this.service.dataFromForgotpass
-  //   // }
-  //  /
-
-  // }
-
-
 }
 

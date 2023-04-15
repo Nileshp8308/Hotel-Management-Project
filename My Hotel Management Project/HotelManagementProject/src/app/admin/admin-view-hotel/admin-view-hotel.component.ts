@@ -9,6 +9,8 @@ import { ApiService } from 'src/app/api.service';
 export class AdminViewHotelComponent {
   getHotelList:any;
   getHotelUrl="http://localhost:3000/hotelDetails"
+  refrehedlist: any;
+  deletedHotels: Object | undefined;
   constructor(private service:ApiService){}
     ngOnInit(){
       this.service.getApi(this.getHotelUrl).subscribe((res:any)=>{
@@ -16,17 +18,19 @@ export class AdminViewHotelComponent {
         this.getHotelList=res
       })
     }
-    // editHotelData(id:number){
-    //   console.log(id)
-    // }
-    deleteHotelData(id:number){
+    
+    //Function Used to Delete  hotel Details and refresh the list
+    async deleteHotelData(id:number){
       let url=this.getHotelUrl+"/"+id
+      console.log(id);
       console.log(url);
-      this.service.deleteAPI(url).subscribe((res:any)=>{
-      })
+      this.deletedHotels=await this.service.deleteAPI(url).toPromise()
+
       this.service.getApi(this.getHotelUrl).subscribe((res:any)=>{
-        console.log(res)
-        this.getHotelList=res
+        console.log(res);
+        this.getHotelList= res
+        console.log(this.getHotelList);
       })
+      
     }
 }

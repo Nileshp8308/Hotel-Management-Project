@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 
@@ -20,13 +20,13 @@ export class HotelBookingComponent {
 
   hotelBooking() {
     this.hotelBookingForm = this.builder.group({
-      username: [''],
-      checkin: [""],
-      checkout: [''],
-      pass: [''],
-      Amount: [''],
-      Mob: [''],
-      add: ['']
+      username: ['',Validators.required],
+      checkin: ['',Validators.required],
+      checkout: ['',Validators.required],
+      pass: ['',Validators.required],
+      Amount: ['1000',Validators.required],
+      Mob: ['',Validators.required],
+      add: ['',Validators.required]
     })
   }
 

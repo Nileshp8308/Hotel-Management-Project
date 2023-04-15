@@ -35,6 +35,7 @@ form{
 .login-form{ 
 	width:400px;
     margin-left: 800px;
+	height: 370px;
 }
 
 .sign-up{
@@ -47,6 +48,9 @@ span{
 }
 .error{
 	color: red;
+	position: absolute;
+	position: absolute;
+    top: 261px;
 }
 .form-group{
     padding-top: 5px;
@@ -56,4 +60,9 @@ span{
     margin-top: -666px;
     position: absolute;
     margin-left: -1300px;
+}
+#sp{
+	position: absolute;
+	height: 100px;
+    top: 290px;
 }

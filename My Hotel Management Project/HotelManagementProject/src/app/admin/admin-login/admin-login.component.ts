@@ -13,8 +13,8 @@ export class AdminLoginComponent {
   
   constructor(private service: ApiService, private router: Router) { }
 
+  // Function Used to validate user
   submit(data: any) {
-    
       console.log(data)
       this.service.getApi(this.getUrl).subscribe((res: any) => {
         console.log(res)
@@ -33,9 +33,12 @@ export class AdminLoginComponent {
         }
       })
   }
+  // redirect to sign up component
   redirect() {
     this.router.navigateByUrl("/admin/adminSignup")
   }
+  // redirect to forgot password component
+
   forgot() {
     console.log("Forgot")
     this.router.navigateByUrl("/admin/forgotPass")
