@@ -255,30 +255,6 @@
       "pass": "Nilesh@123",
       "check": true,
       "id": 33
-    },
-    {
-      "ownername": "Kunal",
-      "ownermob": "7020813118",
-      "hotelname": "Nivant",
-      "hoteladdress": "Dhule",
-      "hotelmob": "8844551122",
-      "hotelmenu": "PaneerTikka",
-      "room": "5",
-      "pass": "Nilesh@123",
-      "check": true,
-      "id": 34
-    },
-    {
-      "ownername": "Vaibhav",
-      "ownermob": "7020813118",
-      "hotelname": "Nivant",
-      "hoteladdress": "Dhule",
-      "hotelmob": "8844551122",
-      "hotelmenu": "PaneerTikka", 
-      "room": "5",
-      "pass": "Nilesh@123",
-      "check": true,
-      "id": 35
     }
   ],
   "hotelBookings": [

@@ -9,6 +9,7 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./owners-sign-up.component.scss']
 })
 export class OwnersSignUpComponent {
+ 
   studentDataForm!: FormGroup
   postAPIdata: any;
   serverResponce: any;
